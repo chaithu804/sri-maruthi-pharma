@@ -7,13 +7,18 @@
 * Front-End:
 
   HTMl
+
   CSS
+
   JS
+
   Bootstrap
 * Backed:
 
   Node js
+
   Mongodb
+
   Js
 # Flow of the websites
 Home page>Services>Contact form>About us

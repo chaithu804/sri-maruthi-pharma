@@ -13,7 +13,7 @@
   JS
 
   Bootstrap
-* Backed:
+* Back-End:
 
   Node js
 

@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width:100%;
+    height:100vh;
+    background-image:url("https://image.freepik.com/free-photo/healthcare-equipment-office-supplies-with-succulent-plant-green-backdrop_23-2148213947.jpg");
+    background-size: cover;
+    background-position:center;
+}
+.navbar{
+    width:100%;
+    margin: auto;
+    left: 50px;
+    padding: 35px 0; 
+    font-size:x-large;
+    display:flexbox;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position:relative;
+    left:900px;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(223, 161, 5);
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.navbar ul li ::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background:white;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li :hover::after{
+    width:100%;
+}
+.content{
+    width:80%;
+    position: absolute;
+    top:40%;
+    transform:translateY(-50%);
+    text-align: center;
+    color:blue;
+    padding-left: 150px;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 130;
+    line-height: 30px;
+    font-size: large;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20ox 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border:2px solid rgba(26, 226, 26, 0.959);
+    background:transparent;
+    overflow: hidden;
+    position: relative;
+    color:goldenrod;
+    cursor: pointer;
+}
+span{
+   background: rgb(2, 2, 46);
+    height:900px;
+    width:100%;
+    position: absolute;
+    left:0;
+    top:90px;
+    z-index:-1;
+    transition:0.5s;
+}
+
+button:hover span{
+    width:100%;
+    color:green;
+}
+button:hover{
+    border:none;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 100px;
+    padding:100px;
+    background-color: rgb(2, 2, 46);
+
+}
+
+.box-container .box{
+    padding:10px;
+    border-radius: 10px;
+    background: white;
+    border:5px solid;
+    border-color:rgb(111, 25, 190);
+    text-align: center;
+}
+
+.box-container .box:hover{
+    border-color: greenyellow;
+    
+}
+.box-container .box .icon{
+    margin-top: 10px ;
+}
+.title{
+    color:rgb(111, 25, 190);
+    
+}
+.title:hover{
+    color: rgb(224, 204, 17);
+}
